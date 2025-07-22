@@ -1,0 +1,240 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--index: calc(1vw + 1vh);
+	--color-header: #f4efec;
+	--color-text: #cdc6c3;
+	--gallery-gap: calc(var(--index) * 7.5)
+}
+/* will-change */
+.content, .hero, .main-header, .gallery > * {
+	will-change: transform;
+}
+body {
+	background-color: rgb(11, 11, 11);
+	background-size: 50px;
+	color: #fafafa;
+	overflow-x: hidden;
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+
+
+}
+.hero {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 22%;
+	object-fit: cover; /* Чтобы картинка красиво растягивалась */
+	z-index: -1;
+}
+.main-header {
+	height: 100vh;
+}
+.container {
+	padding: 0 7vw;
+}
+.main-title {
+	position: relative;
+	font-size: 160px;
+	top: 7%;
+	text-align: center;
+	color: #eff5ff;
+}
+.main-title_1{
+	position: relative;
+	font-size: 160px;
+	top: 7%;
+	text-align: center;
+	color: #888;
+}
+.main-title_2{
+	position: relative;
+	font-size: 50px;
+	top: 7%;
+	text-align: center;
+	color: #888;
+}
+.gallery {
+	display: flex;
+	padding: calc(var(--index) * 8) 0;
+}
+.gallery > * {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.gallery__item {
+	max-width: calc(var(--index) * 21);
+	margin-bottom: var(--gallery-gap);
+	max-height: 180vh;
+	border-radius: 8px;
+}
+.gallery__left {
+	margin-top: calc(var(--gallery-gap) * 1.75);
+}
+.gallery__right .gallery__item {
+	margin: 0;
+	margin-top: var(--gallery-gap);
+}
+.text-block {
+	color: var(--color-text);
+	position: relative;
+}
+.text-block__h {
+	font-size: 2rem;
+	line-height: 2.4rem;
+	color: var(--color-header);
+	margin-bottom: 1.5rem;
+}
+.text-block__p {
+	line-height: 1.95;
+	font-size: 18px;
+}
+.header-spacer {
+  height: 5rem;
+}
+
+.highlight-cyan {
+  color: #22d3ee;
+}
+
+.highlight-blue {
+  color: #3b82f6;
+}
+html, body {
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex-shrink: 0;
+  background-color: #242526;
+  padding: 50px 0;
+  text-align: center;
+  border-top: 1px solid #eff5ff;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.footer-title {
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 30px;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #6356c5;
+}
+.footer-author {
+	text-align: center;
+	font-size: 19px;
+	color: #888;
+	margin-top: 20px;
+}
+.footer-author a {
+	color: #25D366; 
+	text-decoration: none;
+}
+.footer-author a:hover {
+	text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+
+	/* 1. Удаляем фон hero только на мобильных */
+	.hero {
+		display: none; 
+	}
+
+	/* 2. Заголовок становится адаптивным */
+	.main-title {
+		font-size: clamp(28px, 10vw, 160px);
+		text-align: center;
+	}
+	.main-title_1 {
+		font-size: clamp(28px, 10vw, 160px);
+		text-align: center;
+	}
+	.main-title_2 {
+		font-size: clamp(28px, 10vw, 160px);
+		text-align: center;
+	}
+
+	/* 3. Скрываем текст из блоков с картинками */
+	.text-block {
+		display: none !important;
+	}
+
+	/* 4. Располагаем блоки по одному столбцу */
+	.gallery {
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.gallery__left,
+	.gallery__right {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.gallery__item {
+		width: 90%;
+		max-width: 400px;
+		height: auto;
+	}
+
+	/* 5. Уменьшаем ссылки в футере */
+	.footer-links {
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+
+	.footer-link {
+		font-size: 13px;
+	}
+
+	.footer-title {
+		font-size: 14px;
+	}
+}
+
+

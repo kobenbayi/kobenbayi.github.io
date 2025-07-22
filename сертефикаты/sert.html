@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сертификаты | TEC Engineering</title>
+    <link rel="stylesheet" href="sert.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">TEC Engineering</div>
+            <nav class="nav">
+                <a href="../index.html">home</a>
+            </nav>
+        </div>
+    </header>
+    <section class="cert-section">
+        <h2 class="cert-title">Сертификаты TECE</h2>
+
+        <div class="swiper">
+            <div class="swiper-wrapper">
+
+                <!-- Сертификат -->
+                <div class="swiper-slide cert-card"
+                    onclick="openModal('сертефикаты pdf/фото/отчет об испытаниях профиля tece.png')">
+                    <h4 class="cert-title-text">Отчет об испытаниях профиля tece</h4>
+                    <img src="сертефикаты pdf/фото/отчет об испытаниях профиля tece.png" alt="Сертификат 1"
+                        class="cert-image" />
+                    <a href="сертефикаты pdf/Отчет об испытаниях профиля TECE.pdf" class="cert-button"
+                        download>Скачать</a>
+                </div>
+
+                <div class="swiper-slide cert-card"
+                    onclick="openModal('сертефикаты pdf/фото/Сертефикаты арматуры.png')">
+                    <h4 class="cert-title-text">Сертефикаты арматуры</h4>
+                    <img src="сертефикаты pdf/фото/Сертефикаты арматуры.png" alt="Сертификат 2" class="cert-image" />
+                    <a href="сертефикаты pdf/Сертификаты арматура ТЕСЕ.pdf" class="cert-button" download>Скачать</a>
+                </div>
+
+                <div class="swiper-slide cert-card" onclick="openModal('сертефикаты pdf/фото/Сертефикаты газа.png')">
+                    <h4 class="cert-title-text">Сертефикаты газа</h4>
+                    <img src="сертефикаты pdf/фото/Сертефикаты газа.png" alt="Сертификат 3" class="cert-image" />
+                    <a href="сертефикаты pdf/Сертификаты Газ 2022_2025.pdf" class="cert-button" download>Скачать</a>
+                </div>
+
+                <div class="swiper-slide cert-card"
+                    onclick="openModal('сертефикаты pdf/фото/сертефикаты на сантехнические инженерные системы.png')">
+                    <h4 class="cert-title-text">сантехнические инженерные системы</h4>
+                    <img src="сертефикаты pdf/фото/сертефикаты на сантехнические инженерные системы.png"
+                        alt="Сертификат 4" class="cert-image" />
+                    <a href="сертефикаты pdf/Сертификаты на сантехнические инженерные системы.pdf" class="cert-button"
+                        download>Скачать</a>
+                </div>
+                <div class="swiper-slide cert-card"
+                    onclick="openModal('сертефикаты pdf/фото/сертефикат на систему трубопровода.png')">
+                    <h4 class="cert-title-text">сертефикат на систему трубопровода</h4>
+                    <img src="сертефикаты pdf/фото/сертефикат на систему трубопровода.png" alt="Сертификат 1"
+                        class="cert-image" />
+                    <a href="сертефикаты pdf/Сертификаты на системы трубопроводов.pdf" class="cert-button"
+                        download>Скачать</a>
+                </div>
+
+                <div class="swiper-slide cert-card"
+                    onclick="openModal('сертефикаты pdf/фото/электрика и вентиляция.png')">
+                    <h4 class="cert-title-text">электрика и вентиляция</h4>
+                    <img src="сертефикаты pdf/фото/электрика и вентиляция.png" alt="Сертификат 2" class="cert-image" />
+                    <a href="сертефикаты pdf/Электрика и вентиляция_05_2023.pdf" class="cert-button"
+                        download>Скачать</a>
+                </div>
+
+                <div class="swiper-slide cert-card" onclick="openModal('сертефикаты pdf/фото/DOP 997.png')">
+                    <h4 class="cert-title-text">LEISTUNGSERKLÄRUNG (DoP 997)</h4>
+                    <img src="сертефикаты pdf/фото/DOP 997.png" alt="Сертификат 3" class="cert-image" />
+                    <a href="сертефикаты pdf/DoP_997_10.pdf" class="cert-button" download>Скачать</a>
+                </div>
+
+                <div class="swiper-slide cert-card" onclick="openModal('сертефикаты pdf/фото/DOP 14055-1.png')">
+                    <h4 class="cert-title-text">LEISTUNGSERKLÄRUNG (DoP 14055-1)</h4>
+                    <img src="сертефикаты pdf/фото/DOP 14055-1.png" alt="Сертификат 4" class="cert-image" />
+                    <a href="сертефикаты pdf/DoP_14055-1_15.pdf" class="cert-button" download>Скачать</a>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Модальное окно -->
+    <div id="modal" class="modal" onclick="closeModal()">
+        <img id="modal-img" src="" alt="Увеличенное изображение" />
+    </div>
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-title">TEC ENGINEERING</span>
+            <div class="footer-links">
+                <a href="../Контакты/Контакты.html" class="footer-link">Контакты | Обратная связь</a>
+                <a href="https://www.instagram.com/tec.eng.kz/?utm_source=ig_web_button_share_sheet"
+                    class="footer-link">instagram</a>
+                <a href="https://wa.me/77774311143" class="footer-link">WhatsApp</a>
+                <a href="https://t.me/Tec_engineering_kz" class="footer-link">Telegram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            slidesPerView: 4,
+            spaceBetween: 30,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            loop: true,
+            breakpoints: {
+                320: { slidesPerView: 1 },
+                640: { slidesPerView: 2 },
+                1024: { slidesPerView: 3 },
+                1280: { slidesPerView: 4 },
+            },
+        });
+
+        function openModal(src) {
+            document.getElementById('modal-img').src = src;
+            document.getElementById('modal').classList.add('active');
+        }
+
+        function closeModal() {
+            document.getElementById('modal').classList.remove('active');
+        }
+    </script>
+</body>
+
+</html>

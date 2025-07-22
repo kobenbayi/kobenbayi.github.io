@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Контакты | TEC Engineering</title>
+    <link rel="stylesheet" href="Контакты.css" />
+</head>
+
+<body>
+    <!-- Sticky Header -->
+    <header class="header">
+        <div class="header_container">
+            <div class="logo">TEC Engineering</div>
+            <nav class="nav">
+                <a href="../index.html">home</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <h1>Контакты</h1>
+
+        <div class="contact-section">
+            <!-- Левая колонка — карта -->
+            <div style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.kz/maps/ru/163/astana/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#fc1010;font-size:12px;position:absolute;top:0px;">Астана</a><a
+                    href="https://yandex.kz/maps/ru/163/astana/house/ashirbek_syghay_koshesi_12/Y0gYdA5mQEMBQFtrfX1yc35nbA==/?ll=71.297321%2C51.132029&utm_medium=mapframe&utm_source=maps&z=19"
+                    style="color:#ba2a2a;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт,
+                    навигация,
+                    поиск мест</a><iframe
+                    src="https://yandex.kz/map-widget/v1/?ll=71.297321%2C51.132029&mode=whatshere&whatshere%5Bpoint%5D=71.296928%2C51.132256&whatshere%5Bzoom%5D=17&z=19"
+                    width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+            </div>
+
+            <!-- Правая колонка — контакты (в 3 колонки) -->
+            <div class="contacts">
+                <div class="contact-item"><strong>Телефон:</strong><br>+7 (777) 431-11-43</div>
+                <div class="contact-item"><strong>Адрес:</strong><br>г. Астана, ул Аширбека Сыгай, 12</div>
+                <div class="contact-item"><strong>Telegram:</strong><br><a
+                        href="https://t.me/Tec_engineering_kz">@Tec_engineering_kz</a></div>
+                <div class="contact-item"><strong>Instagram:</strong><br><a
+                        href="https://www.instagram.com/tec.eng.kz/?utm_source=ig_web_button_share_sheet">@tec.eng.kz</a>
+                </div>
+                <div class="contact-item"><strong>WhatsApp:</strong><br><a href="https://wa.me/77774311143">+7 (777)
+                        431-11-43</a></div>
+                <div class="contact-item"><strong>Email:</strong><br><a
+                        href="mailto:info@tec-engineering.kz">tec.eng.kaz@bk.ru</a></div>
+            </div>
+        </div>
+
+        <h2>Обратная связь</h2>
+
+        <form class="feedback-form" id="form">
+            <input type="text" id="name" name="name" placeholder="Ваше имя" required />
+            <input type="text" id="phone" name="phone" placeholder="Номер, Email или соцсеть" required />
+            <input type="text" id="city" name="city" placeholder="Ваш город" required />
+            <textarea id="question" name="question" placeholder="Ваш вопрос" rows="5" required></textarea>
+            <button type="submit">Отправить</button>
+            <p class="succes display">Обращение доставлено! Мы свяжемся с вами в ближайшее время </p>
+        </form>
+
+    </div>
+
+    <!-- Футер -->
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="footer-title">TEC ENGINEERING</span>
+            <div class="footer-links">
+                <a href="https://www.instagram.com/tec.eng.kz/?utm_source=ig_web_button_share_sheet"
+                    class="footer-link">instagram</a>
+                <a href="https://wa.me/77774311143" class="footer-link">WhatsApp</a>
+                <a href="https://t.me/Tec_engineering_kz" class="footer-link">Telegram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="../js/order.js"></script>
+</body>
+
+</html>
