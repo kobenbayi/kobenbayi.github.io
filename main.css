@@ -207,7 +207,7 @@ body {
 
 
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
 
 
 	/* 1. Удаляем фон hero только на мобильных */
@@ -272,8 +272,92 @@ body {
 }
 
 .gallery__item {
-	width: 90%;
-	max-width: 400px;
+	width: 100%;
+	max-width: 700px;
+	height: auto;
+}
+
+/* 5. Уменьшаем ссылки в футере */
+.footer-links {
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.footer-link {
+	font-size: 20px;
+}
+
+.footer-title {
+	font-size: 25px;
+}
+}
+@media (max-width: 768px) {
+
+	/* 1. Удаляем фон hero только на мобильных */
+	.hero-section {
+		background-image: url('Tece/Гл. страница/bg\ для\ телефона\ 2-Photoroom.jpg ');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+
+.hero {
+	display: none;
+	position: relative;
+}
+/* 2. Заголовок становится адаптивным */
+.main-title {
+
+	font-size: clamp(28px, 10vw, 160px);
+	text-align: center;	
+	position: relative;
+	top: 280px;
+}
+
+.main-title_1 {
+	font-size: clamp(28px, 10vw, 160px);
+	text-align: center;
+	position: relative;
+	top: 400px;
+}
+.main-title_3{
+	color: #ffffff;;
+	font-size: clamp(28px, 8vw, 160px);
+	text-align: center;
+	position: relative;
+	top: 280px;
+}
+.main-title_2 {
+	font-size: clamp(28px, 10vw, 160px);
+	text-align: center;
+	color: #ffffff;
+	position: relative;
+	top: 400px;
+}
+
+/* 3. Скрываем текст из блоков с картинками */
+.text-block {
+	display: none !important;
+}
+
+/* 4. Располагаем блоки по одному столбцу */
+.gallery {
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.gallery__left,
+.gallery__right {
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+}
+
+.gallery__item {
+	width: 100%;
+	max-width: 500px;
 	height: auto;
 }
 

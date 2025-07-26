@@ -181,5 +181,8 @@ body {
     .footer-title {
         font-size: 14px;
     }
+    .nav a:not(:first-child) {
+        display: none;
+    }
 
 }
