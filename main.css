@@ -191,7 +191,7 @@ body {
 
 .footer-author {
 	text-align: center;
-	font-size: 19px;
+	font-size: 15px;
 	color: #888;
 	margin-top: 20px;
 }
@@ -312,28 +312,32 @@ body {
 	font-size: clamp(28px, 10vw, 160px);
 	text-align: center;	
 	position: relative;
-	top: 280px;
+	top: 210px;
+	font-family: "font-family: 'Unbounded', sans-serif;"
 }
 
 .main-title_1 {
 	font-size: clamp(28px, 10vw, 160px);
 	text-align: center;
 	position: relative;
-	top: 400px;
+	top: 330px;
+	font-family: "font-family: 'Unbounded', sans-serif;"
 }
 .main-title_3{
-	color: #ffffff;;
+	color: #888;;
 	font-size: clamp(28px, 8vw, 160px);
 	text-align: center;
 	position: relative;
-	top: 280px;
+	top: 210px;
+	font-family: "font-family: 'Unbounded', sans-serif;"
 }
 .main-title_2 {
 	font-size: clamp(28px, 10vw, 160px);
 	text-align: center;
-	color: #ffffff;
+	color: #888;
 	position: relative;
-	top: 400px;
+	top: 330px;
+	font-family: "font-family: 'Unbounded', sans-serif;"
 }
 
 /* 3. Скрываем текст из блоков с картинками */
